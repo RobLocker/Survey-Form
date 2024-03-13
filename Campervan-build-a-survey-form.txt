@@ -1,0 +1,162 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+<title>Campervan Survey</title>
+<meta charset='utf-8'>
+<link rel='stylesheet' href='styles.css'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+</head>
+<body>
+<h1 id='title'>Campervan Survey Form</h1>
+<p id='description'> Tell us about you Campercan Build so we can help you!</p>
+
+<form id='survey-form' method="post" action='https://register-demo.freecodecamp.org'>
+
+<fieldset name='contact-details'>
+
+  <label for='name' id='name-label'>First Name: <input id='name' type='text' required placeholder='Enter your Name' /></label>
+
+  <label for='name' id='surname-label'>Second Name: <input id='name' type='text' required placeholder='Enter your surname'</label>
+  <label></label>
+
+  <label for='email' id='email-label'>Email Address: <input id='email' type='email' required placeholder='campervan@gmail.com' </label>
+
+</fieldset>
+
+<fieldset name='Tick Box'class='tick-box'>
+
+  <legend>Is this a self-buid Project?</legend>
+
+<div class='radio-container'>
+  <label for="self-build" ><input id="self-build" value='self' type="radio" name="Ticks" checked class='tick' />    Self  Build  </label>
+</div>
+
+<div class='radio-container'>
+<label for="conversion" class='inline'><input id="conversion" value='pro' name="Ticks" type="radio" class='tick' /> Professional Conversion</label>
+</div>
+
+</fieldset>
+
+<fieldset name='drop-down' class='drop-down'>
+  <label for='van-type'>What type of van do you have? 
+  <select id="dropdown" name="van-type">
+  <option value="">(select one)</option>
+  <option value="1">Ford</option>
+  <option value="2">VW</option>
+  <option value="3">Renault</option>
+  <option value="4">Other</option>
+  </select>
+  </label>
+
+  <label for="van-photo" id='photo'>Upload a photo of you Campervan: <input id="van-photo" type="file" name="file" /></label>
+
+  <label for='number' id='number-label'>How many miles has your vehcile done? <input placeholder='Enter Vehicle Mileage' id='number' type='number' name="vehicle-mileage" min="0" max="500000" /> </label>
+
+<label for="description">Please provide a description of you Van Build:
+<textarea id="bio" name="bio" rows="3" cols="30" placeholder="Tell us you build spec"></textarea>
+</label>
+</fieldset>
+
+<label for="info">
+<input class="inline" id="info" type="checkbox" value='confirmed-info' required name="terms-and-conditions" /> I confirm all of the above information is correct
+      </label>
+
+<label for="terms-and-conditions">
+<input class="inline" id="terms-and-conditions" type="checkbox" value='terms-accepted' required name="terms-and-conditions" /> I accept the <a href="www.google.co.uk">terms and conditions</a>
+      </label>
+
+      <input type="submit" value="Submit" id='submit'/>
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1, p {
+  text-align: center;
+  font-family: sans-serif;
+}
+form {
+  background-color: #2d545e;
+  color: white;
+  font-family: Arial;
+  width: 75vw;
+  margin: auto;
+  max-width: 500px;
+  min-width: 250px;
+  border: 5px solid #12343b;; 
+  padding:7px; 
+  
+  
+}
+body {
+background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230216/pngtree-family-vacation-travel-caravan-campervan-image_1600753.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+  
+}
+
+label {
+  display: block;
+  margin: 0.75rem 0
+}
+
+/* defines parameters for all input types e.g type box */
+input, select, file, number {
+  width: 100%;
+  background-color: #12343b;
+  color: white; 
+  fond-family: Arial;
+  height: 1.5em;
+  margin: 10px 0 0 0
+   
+}
+
+/* defines width of tick boxes */
+.tick {
+  width: 50px
+  
+}
+
+/*adds both click buttons on same line */
+.radio-container { 
+  display: inline-block;
+  margin-right: 10px
+}
+
+/* adds a space between fieldsets */
+.tick-box, .drop-down {
+  margin-top: 5;
+  
+}
+
+select {
+  height: 1.5em
+}
+
+input[type="radio"], input[type='checkbox'] {
+  width: 10px;
+  height: 10px
+}
+
+.inline {
+  display: inline; 
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+input[type='checkbox'] {
+  margin-left: 10px;
+}  
+
+
+** end of undefined **
+
